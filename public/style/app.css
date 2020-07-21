@@ -1,0 +1,16 @@
+.box {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#delete {
+    display: inline;
+}
+
+.move {
+    margin-right: 0 !important;
+}
+
+.spacing {
+    margin-top: 3.5rem;
+}

@@ -1,0 +1,57 @@
+<!-- <div class="container">
+    <div class="border border-dark rounded-lg px-2 pb-16 box">
+        <h3><%= blog.title %> </h3>
+        <div style="text-align: center;">
+            <img class="rounded" src="<%= blog.image %>">
+        </div>   
+        <div class="font-weight-bold">
+        <span><%= blog.created.toDateString() %></span><hr>
+        </div>
+        <p><%= blog.body %></p>
+        <a href="/blogs/<%= blog._id %>/edit" class="btn btn-outline-success">Edit</a>
+        <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-outline-danger">Delete</button>
+        </form>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+<!-- <div class="card mb-3" style="max-width: 540px;"> -->
+<div class="card mb-8" style="max-width: 1280px;">
+
+    <div class="row no-gutters">
+      <div class="col-md-10">
+        <img src="<%= blog.image %>" class="card-img" alt="Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= blog.title %></h5>
+          <p class="card-text"><%= blog.body %></p>
+          <p class="card-text"><%= blog.created.toDateString() %></small></p>
+          <a href="/blogs/<%= blog._id %>/edit" class="btn btn-outline-success">Edit</a>
+        <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-outline-danger">Delete</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <% blogs.forEach(function(blog) { %>
+<!-- <div>
+    <h2><%= blog.title %></h2>
+    <img src="<%= blog.image %>">
+    <span><%= blog.created.toDateString() %></span>
+    <p><%= blog.body.substring(0, 80) %>...</p>
+    <a href="/blogs/<%= blog._id %> ">Read More</a>
+</div>
+<% }) %> -->
